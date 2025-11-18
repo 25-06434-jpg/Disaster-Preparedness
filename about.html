@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disaster Information</title>
+  <title>Disasters</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +17,14 @@
       </ul>
     </nav>
   </header>
+
+  <section class="hero hero-small">
+    <img src="images/hero.jpg" alt="Disaster Hero" class="hero-bg">
+    <div class="hero-content">
+      <h2>Know the Disasters</h2>
+      <p>Click on a disaster card to see tips, safety info, and emergency resources.</p>
+    </div>
+  </section>
 
   <section class="disaster-grid">
     <div class="card" onclick="openModal('typhoon')">
@@ -37,6 +45,7 @@
     </div>
   </section>
 
+  <!-- Modal -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -56,39 +65,30 @@
         content: `
           <h3>Before:</h3>
           <p>• Store enough food, water, and medicines for at least three days.<br>
-          • Charge your phones, radios, and flashlights.<br>
-          • Clear drainage areas and bring outdoor items inside.<br>
-          • Stay informed by listening to weather forecasts and advisories.</p>
+          • Charge all devices, including phones, radios, and flashlights.<br>
+          • Clear drainage areas, secure windows and doors, and bring outdoor items indoors.<br>
+          • Know your evacuation routes and shelters.<br>
+          • Stay updated with local weather forecasts and warnings.</p>
           
           <h3>During:</h3>
-          <p>• Stay indoors and away from glass windows.<br>
-          • Turn off electricity if flooding occurs.<br>
-          • Avoid wading through floodwaters; they may be contaminated.<br>
-          • Follow evacuation orders immediately.</p>
+          <p>• Stay indoors and away from windows or glass doors.<br>
+          • Turn off electricity if water enters your home.<br>
+          • Avoid wading through floodwaters; they may contain debris or be electrically charged.<br>
+          • Follow evacuation orders immediately and keep emergency items handy.<br>
+          • Keep family members informed and stay calm.</p>
           
           <h3>After:</h3>
-          <p>• Check your home for damage before entering.<br>
-          • Avoid downed power lines and report them.<br>
-          • Help clean up safely, and avoid stagnant water.<br>
-          • Monitor news updates for relief operations.</p>
+          <p>• Check your home carefully before entering.<br>
+          • Avoid downed power lines and report them to authorities.<br>
+          • Assist neighbors safely and clean up debris.<br>
+          • Monitor news updates for relief operations and health advisories.<br>
+          • Prevent waterborne illnesses by cleaning and disinfecting properly.</p>
 
           <div class="extra-info">
-            <figure>
-              <img src="images/kit.jpg" alt="Emergency Kit">
-              <figcaption>Emergency Kit</figcaption>
-            </figure>
-            <figure>
-              <img src="images/typhoon team.jpg" alt="Response Team">
-              <figcaption>Response Team</figcaption>
-            </figure>
-            <figure>
-              <img src="images/typhoon training.jpg" alt="Safety Training">
-              <figcaption>Safety Training</figcaption>
-            </figure>
-            <figure>
-              <img src="images/map.jpg" alt="Evacuation Map">
-              <figcaption>Evacuation Map</figcaption>
-            </figure>
+            <figure><img src="images/kit.jpg"><figcaption>Emergency Kit</figcaption></figure>
+            <figure><img src="images/typhoon team.jpg"><figcaption>Response Team</figcaption></figure>
+            <figure><img src="images/typhoon training.jpg"><figcaption>Safety Training</figcaption></figure>
+            <figure><img src="images/map.jpg"><figcaption>Evacuation Map</figcaption></figure>
           </div>
         `
       },
@@ -97,40 +97,31 @@
         image: "images/earthquake.jpg",
         content: `
           <h3>Before:</h3>
-          <p>• Secure heavy objects and furniture to walls.<br>
-          • Prepare an emergency bag with essentials.<br>
-          • Practice “Drop, Cover, and Hold On” regularly.<br>
-          • Know safe spots like sturdy tables or door frames.</p>
+          <p>• Secure heavy furniture and appliances to walls.<br>
+          • Prepare an emergency bag with food, water, first aid, and essentials.<br>
+          • Practice "Drop, Cover, and Hold On" drills regularly.<br>
+          • Identify safe spots like under sturdy tables or against interior walls.<br>
+          • Make a communication plan with family members in case of separation.</p>
           
           <h3>During:</h3>
           <p>• Stay calm and do not run outside immediately.<br>
-          • Drop to the ground, cover your head, and hold on.<br>
-          • Stay away from windows, mirrors, and heavy objects.<br>
-          • If outdoors, move to an open area away from buildings and power lines.</p>
+          • Drop to the ground, cover your head and neck, and hold on.<br>
+          • Stay away from windows, mirrors, and heavy objects that could fall.<br>
+          • If outdoors, move to an open area away from buildings and power lines.<br>
+          • Avoid elevators and open flames.</p>
           
           <h3>After:</h3>
           <p>• Be cautious of aftershocks.<br>
-          • Check for injuries and administer first aid if needed.<br>
-          • Avoid damaged buildings and report gas leaks.<br>
-          • Listen to authorities for updates and evacuation orders.</p>
+          • Check yourself and others for injuries; administer first aid if needed.<br>
+          • Avoid damaged buildings and report gas or water leaks.<br>
+          • Listen to authorities for updates, evacuation orders, or relief operations.<br>
+          • Document damage for insurance and recovery purposes.</p>
 
           <div class="extra-info">
-            <figure>
-              <img src="images/kit.jpg" alt="Emergency Kit">
-              <figcaption>Emergency Kit</figcaption>
-            </figure>
-            <figure>
-              <img src="images/earthquake rescue.jpg" alt="Response Team">
-              <figcaption>Rescue Team</figcaption>
-            </figure>
-            <figure>
-              <img src="images/earthquake drill.jpg" alt="Drill Training">
-              <figcaption>Earthquake Drill</figcaption>
-            </figure>
-            <figure>
-              <img src="images/map.jpg" alt="Evacuation Map">
-              <figcaption>Evacuation Area Map</figcaption>
-            </figure>
+            <figure><img src="images/kit.jpg"><figcaption>Emergency Kit</figcaption></figure>
+            <figure><img src="images/earthquake rescue.jpg"><figcaption>Rescue Team</figcaption></figure>
+            <figure><img src="images/earthquake drill.jpg"><figcaption>Drill Training</figcaption></figure>
+            <figure><img src="images/map.jpg"><figcaption>Evacuation Map</figcaption></figure>
           </div>
         `
       },
@@ -139,40 +130,31 @@
         image: "images/fire.jpg",
         content: `
           <h3>Before:</h3>
-          <p>• Install smoke alarms and check batteries regularly.<br>
-          • Prepare a fire extinguisher and learn how to use it.<br>
-          • Create a family fire escape plan and practice it.<br>
-          • Avoid overloading electrical outlets.</p>
+          <p>• Install smoke alarms on every floor and test them regularly.<br>
+          • Prepare fire extinguishers and know how to use them.<br>
+          • Develop a family fire escape plan and practice it regularly.<br>
+          • Avoid overloading electrical outlets and unplug unused devices.<br>
+          • Keep flammable materials away from heat sources.</p>
           
           <h3>During:</h3>
-          <p>• Stay low and crawl under the smoke.<br>
-          • Do not open hot doors; find another exit.<br>
-          • Use a wet cloth to cover your nose and mouth.<br>
-          • Once out, stay out — never re-enter a burning building.</p>
+          <p>• Stay low and crawl under the smoke if escaping.<br>
+          • Check doors for heat before opening; use an alternative exit if necessary.<br>
+          • Cover your nose and mouth with a wet cloth to avoid smoke inhalation.<br>
+          • Once outside, do not go back inside for any reason.<br>
+          • Call emergency services immediately.</p>
           
           <h3>After:</h3>
-          <p>• Wait for the fire department to declare it safe.<br>
+          <p>• Wait until authorities declare it safe before entering your home.<br>
           • Document damages for insurance and recovery.<br>
-          • Check for hidden sparks or smoldering areas.<br>
-          • Seek help if experiencing trauma or injury.</p>
+          • Check for hidden sparks, embers, or structural damage.<br>
+          • Seek medical or psychological help if needed.<br>
+          • Participate in community fire safety education to prevent future incidents.</p>
 
           <div class="extra-info">
-            <figure>
-              <img src="images/kit.jpg" alt="Fire Kit">
-              <figcaption>Fire Safety Kit</figcaption>
-            </figure>
-            <figure>
-              <img src="images/team.jpg" alt="Firefighters">
-              <figcaption>Fire Team</figcaption>
-            </figure>
-            <figure>
-              <img src="images/fire drill.jpg" alt="Fire Drill">
-              <figcaption>Fire Drill</figcaption>
-            </figure>
-            <figure>
-              <img src="images/map.jpg" alt="Escape Plan">
-              <figcaption>Escape Route Map</figcaption>
-            </figure>
+            <figure><img src="images/kit.jpg"><figcaption>Fire Kit</figcaption></figure>
+            <figure><img src="images/team.jpg"><figcaption>Fire Team</figcaption></figure>
+            <figure><img src="images/fire drill.jpg"><figcaption>Fire Drill</figcaption></figure>
+            <figure><img src="images/map.jpg"><figcaption>Escape Plan</figcaption></figure>
           </div>
         `
       },
@@ -181,64 +163,44 @@
         image: "images/flood.jpg",
         content: `
           <h3>Before:</h3>
-          <p>• Know your area’s flood-prone zones.<br>
-          • Keep valuables and important documents in waterproof bags.<br>
-          • Elevate electrical appliances and furniture.<br>
-          • Prepare an emergency kit and plan evacuation routes.</p>
+          <p>• Know your area’s flood-prone zones and plan evacuation routes.<br>
+          • Keep important documents in waterproof bags or containers.<br>
+          • Elevate electrical appliances and furniture if possible.<br>
+          • Prepare an emergency kit including food, water, and first aid.<br>
+          • Stay updated with weather forecasts and community alerts.</p>
           
           <h3>During:</h3>
           <p>• Move to higher ground immediately.<br>
-          • Avoid walking or driving through moving water.<br>
-          • Turn off electricity and gas at the main switch.<br>
-          • Listen to local authorities for safety announcements.</p>
+          • Avoid walking, swimming, or driving through moving water.<br>
+          • Turn off electricity and gas at the main switch if safe to do so.<br>
+          • Listen to local authorities for safety announcements.<br>
+          • Keep in contact with family and neighbors to ensure safety.</p>
           
           <h3>After:</h3>
-          <p>• Stay away from floodwaters—they may be contaminated.<br>
-          • Clean and disinfect everything that got wet.<br>
-          • Do not turn on electrical appliances until inspected.<br>
-          • Watch for snakes, insects, and other hazards.</p>
+          <p>• Stay away from floodwaters as they may be contaminated.<br>
+          • Clean and disinfect everything that got wet to prevent illness.<br>
+          • Do not turn on electrical appliances until inspected by professionals.<br>
+          • Watch out for displaced wildlife, snakes, and insects.<br>
+          • Follow official guidance for returning home and accessing relief services.</p>
 
           <div class="extra-info">
-            <figure>
-              <img src="images/kit.jpg" alt="Emergency Kit">
-              <figcaption>Flood Emergency Kit</figcaption>
-            </figure>
-            <figure>
-              <img src="images/flood team.jpg" alt="Rescue Team">
-              <figcaption>Rescue Operation Team</figcaption>
-            </figure>
-            <figure>
-              <img src="images/flood training.jpg" alt="Flood Training">
-              <figcaption>Flood Response Training</figcaption>
-            </figure>
-            <figure>
-              <img src="images/map.jpg" alt="Evacuation Map">
-              <figcaption>Flood Evacuation Map</figcaption>
-            </figure>
+            <figure><img src="images/kit.jpg"><figcaption>Flood Kit</figcaption></figure>
+            <figure><img src="images/flood team.jpg"><figcaption>Rescue Team</figcaption></figure>
+            <figure><img src="images/flood training.jpg"><figcaption>Flood Training</figcaption></figure>
+            <figure><img src="images/map.jpg"><figcaption>Evacuation Map</figcaption></figure>
           </div>
         `
       }
     };
 
-    function openModal(type) {
+    function openModal(type){
       const modal = document.getElementById('modal');
       const body = document.getElementById('modal-body');
-      body.innerHTML = `
-        <h2>${disasterData[type].title}</h2>
-        <img src="${disasterData[type].image}" class="modal-img" alt="${type}">
-        ${disasterData[type].content}
-      `;
+      body.innerHTML = `<h2>${disasterData[type].title}</h2><img src="${disasterData[type].image}" class="modal-img"><br>${disasterData[type].content}`;
       modal.style.display = 'block';
     }
-
-    function closeModal() {
-      document.getElementById('modal').style.display = 'none';
-    }
-
-    window.onclick = function(e) {
-      const modal = document.getElementById('modal');
-      if (e.target === modal) modal.style.display = 'none';
-    };
+    function closeModal(){document.getElementById('modal').style.display='none';}
+    window.onclick = e => {if(e.target===document.getElementById('modal')) closeModal();}
   </script>
 </body>
 </html>
