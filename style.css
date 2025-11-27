@@ -61,7 +61,6 @@ nav ul li a.active {
 }
 
 .hero {
-  background: url("images/hero.jpg"); 
   position: relative;
   height: 100vh;
   display: flex;
@@ -80,7 +79,7 @@ nav ul li a.active {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.5);
@@ -97,8 +96,7 @@ nav ul li a.active {
   margin-bottom: 20px;
   color: #fff; 
   background: none; 
-  -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-background-clip: unset;
   -webkit-text-fill-color: #fff;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.6); 
   text-align: center;
@@ -158,7 +156,6 @@ nav ul li a.active {
   font-size: 24px;
   padding: 15px;
   background: linear-gradient(to right, #f7971e, #ffd200, #6a11cb, #ff5f6d);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 7s linear infinite;
@@ -242,17 +239,16 @@ nav ul li a.active {
   color: #fff;  
   animation: rainbow 12s linear infinite;
 }
+
 .contact-section h2,
 .hotlines-section h2 {
   font-size: 36px;
   margin-bottom: 15px;
   color: #fff; 
   background: none;
-  -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-background-clip: unset;
   -webkit-text-fill-color: #fff;
 }
-
 
 .contact-section p,
 .hotlines-section p {
@@ -313,4 +309,3 @@ footer {
   .card h3{font-size:20px;}
   .extra-info figure img{height:100px;}
 }
-
