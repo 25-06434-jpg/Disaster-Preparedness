@@ -86,14 +86,15 @@ nav ul li a.active {
 }
 
 .hero-content {
+  height: 100vh;
+  background-image: ("HERO.jpg")
+  background-size: cover;
+  background position: center;
+  background-repeat: no-repeat;
   color: #fff;
-  max-width: 300px;
-  div {  
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-  }
+  display: flex;
+  align-items: center;
+  justify content: center;
 }
 
 .hero-content h2 {
