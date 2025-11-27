@@ -136,6 +136,10 @@ nav ul li a.active {
   margin-bottom: 20px;
 }
 
+.hero-content {
+  margin-top: 300px;   /* adjust this number */
+}
+
 .disaster-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
