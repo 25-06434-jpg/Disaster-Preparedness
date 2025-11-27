@@ -63,7 +63,7 @@ nav ul li a.active {
 .hero {
   position: relative;
   height: 100vh;
-  display: flex;
+  display: fit;
   align-items: center;
   justify-content: center;
   text-align: center;
