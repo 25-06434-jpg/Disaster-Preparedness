@@ -122,6 +122,19 @@ nav ul li a.active {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
+.hero-index .hero-content {
+  position: relative;
+  margin-top: 320px;  /* push text lower */
+  text-align: center;
+}
+
+.hero-index .hero-content p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+}
 
 .disaster-grid {
   display: grid;
