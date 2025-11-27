@@ -88,10 +88,12 @@ nav ul li a.active {
 .hero-content {
   color: #fff;
   max-width: 300px;
+  div {  
   padding-top: 10px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 25px;
+  }
 }
 
 .hero-content h2 {
