@@ -60,7 +60,7 @@ nav ul li a.active {
   100%{background-position:0% 50%;}
 }
 
-.hero {
+.HERO {
   background: url("images/hero.png"); 
   position: relative;
   height: 100vh;
@@ -75,7 +75,7 @@ nav ul li a.active {
   height: 60vh;
 }
 
-.hero-bg {
+.HERO-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ nav ul li a.active {
   filter: brightness(0.5);
 }
 
-.hero-content {
+.HERO-content {
   color: #fff;
   max-width: 900px;
   padding: 0 20px;
@@ -104,12 +104,12 @@ nav ul li a.active {
   text-align: center;
 }
 
-.hero-content p {
+.HERO-content p {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.hero-content .btn {
+.HERO-content .btn {
   background: linear-gradient(45deg, #6a11cb, #2575fc, #ff6a00, #fcb045);
   padding: 12px 30px;
   border-radius: 30px;
@@ -120,7 +120,7 @@ nav ul li a.active {
   animation: rainbow 10s linear infinite;
 }
 
-.hero-content .btn:hover {
+.HERO-content .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
