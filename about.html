@@ -43,6 +43,28 @@
       <img src="images/flood.jpg" alt="Flood">
       <h3>Flood</h3>
     </div>
+    <div class="card" onclick="openModal('volcanic eruption')">
+      <img src="images/volcanic.jpg" alt="Volanic Eruption">
+      <h3>Volcanic Eruption</h3>
+    </div> 
+    <div class="card" onclick="openModal('landslide')">
+      <img src="images/landslide.jpg" alt="Landslide">
+      <h3>Landslide</h3>
+    </div>  
+    <div class="card" onclick="openModal('tsunami')">
+      <img src="images/tsunami.jpg" alt="Tsunami">
+      <h3>Tsunami</h3>
+    </div><div class="card" onclick="openModal('tornado')">
+      <img src="images/tornado.jpg" alt="Tornado">
+      <h3>Tornado</h3>
+    </div> <div class="card" onclick="openModal('wild fire')">
+      <img src="images/wild fire.jpg" alt="Wild Fire">
+      <h3>Wild Fire</h3>
+    </div> 
+    <div class="card" onclick="openModal('sinkhole')">
+      <img src="images/sinkhole.jpg" alt="Sinkhole">
+      <h3>Sinkhole</h3>
+    </div>  
   </section>
 
   <div id="modal" class="modal">
@@ -190,8 +212,247 @@
           </div>
         `
       }
-    };
+      const disasterData = {
 
+  flood: {
+    title: "Flood Safety Tips",
+    image: "images/flood.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Know your area’s flood-prone zones and plan evacuation routes.<br>
+      • Keep important documents in waterproof bags or containers.<br>
+      • Elevate electrical appliances and furniture if possible.<br>
+      • Prepare an emergency kit including food, water, and first aid.<br>
+      • Stay updated with weather forecasts and community alerts.</p>
+      
+      <h3>During:</h3>
+      <p>• Move to higher ground immediately.<br>
+      • Avoid walking, swimming, or driving through moving water.<br>
+      • Turn off electricity and gas at the main switch if safe to do so.<br>
+      • Listen to local authorities for safety announcements.<br>
+      • Keep in contact with family and neighbors to ensure safety.</p>
+      
+      <h3>After:</h3>
+      <p>• Stay away from floodwaters as they may be contaminated.<br>
+      • Clean and disinfect everything that got wet to prevent illness.<br>
+      • Do not turn on electrical appliances until inspected by professionals.<br>
+      • Watch out for displaced wildlife, snakes, and insects.<br>
+      • Follow official guidance for returning home and accessing relief services.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/kit.jpg"><figcaption>Flood Kit</figcaption></figure>
+        <figure><img src="images/flood team.jpg"><figcaption>Rescue Team</figcaption></figure>
+        <figure><img src="images/flood training.jpg"><figcaption>Flood Training</figcaption></figure>
+        <figure><img src="images/map.jpg"><figcaption>Evacuation Map</figcaption></figure>
+      </div>
+    `
+  },
+
+  volcanic: {
+    title: "Volcanic Eruption Safety Tips",
+    image: "images/volcano.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Know the evacuation routes and danger zones near volcanoes.<br>
+      • Prepare goggles and masks to protect from ash fall.<br>
+      • Keep emergency food, water, and first aid kits ready.<br>
+      • Protect important documents in waterproof containers.<br>
+      • Stay updated with PHIVOLCS alerts and local announcements.</p>
+
+      <h3>During:</h3>
+      <p>• Evacuate immediately if authorities instruct you to.<br>
+      • Close all windows and doors to avoid ash entering your home.<br>
+      • Wear long sleeves, goggles, and an N95 mask for ash protection.<br>
+      • Avoid rivers and streams due to lahar flow risk.<br>
+      • Stay indoors as much as possible.</p>
+
+      <h3>After:</h3>
+      <p>• Avoid driving in heavy ashfall to prevent engine damage.<br>
+      • Clean ash by gently sweeping—do not use water.<br>
+      • Check your home for structural damage.<br>
+      • Wait for official announcement before returning to your area.<br>
+      • Help clean surroundings only when it is safe.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/ashfall mask.jpg"><figcaption>Ashfall Protection</figcaption></figure>
+        <figure><img src="images/evacuation.jpg"><figcaption>Evacuation</figcaption></figure>
+        <figure><img src="images/volcano team.jpg"><figcaption>Response Team</figcaption></figure>
+        <figure><img src="images/volcano map.jpg"><figcaption>Hazard Map</figcaption></figure>
+      </div>
+    `
+  },
+
+  landslide: {
+    title: "Landslide Safety Tips",
+    image: "images/landslide.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Identify areas in your community prone to landslides.<br>
+      • Avoid building homes near steep slopes or loose soil.<br>
+      • Monitor heavy rainfall warnings from authorities.<br>
+      • Prepare an emergency kit and evacuation plan.<br>
+      • Secure loose rocks and soil around your home when possible.</p>
+
+      <h3>During:</h3>
+      <p>• Evacuate immediately when you notice ground movement or unusual sounds.<br>
+      • Stay away from steep slopes and cliffs.<br>
+      • Move to higher and safer ground quickly.<br>
+      • Listen to local officials for instructions.<br>
+      • Assist neighbors, elderly, and children in evacuating.</p>
+
+      <h3>After:</h3>
+      <p>• Stay away from the landslide area as more slides may occur.<br>
+      • Check for injured people and provide first aid if needed.<br>
+      • Report damaged utilities to authorities.<br>
+      • Avoid entering damaged structures until cleared.<br>
+      • Wait for official announcements before returning home.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/landslide warning.jpg"><figcaption>Landslide Warning</figcaption></figure>
+        <figure><img src="images/evac hill.jpg"><figcaption>Evacuate to Higher Ground</figcaption></figure>
+        <figure><img src="images/landslide rescue.jpg"><figcaption>Rescue Operations</figcaption></figure>
+        <figure><img src="images/landslide map.jpg"><figcaption>Landslide Map</figcaption></figure>
+      </div>
+    `
+  },
+
+  tsunami: {
+    title: "Tsunami Safety Tips",
+    image: "images/tsunami.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Know if your community is in a tsunami-prone coastal area.<br>
+      • Learn evacuation routes to higher ground.<br>
+      • Prepare emergency kits and waterproof containers for documents.<br>
+      • Participate in community tsunami drills.<br>
+      • Stay updated with tsunami advisories from PHIVOLCS.</p>
+
+      <h3>During:</h3>
+      <p>• Move to higher ground immediately after a strong earthquake.<br>
+      • Stay away from beaches and coastlines.<br>
+      • Do not wait for official warnings if you feel a long or strong quake.<br>
+      • Follow evacuation signs and authorities’ instructions.<br>
+      • Stay alert for multiple waves—they may come minutes apart.</p>
+
+      <h3>After:</h3>
+      <p>• Stay away from the coast until officials declare it safe.<br>
+      • Avoid entering damaged shoreline buildings until inspected.<br>
+      • Watch out for debris and damaged roads.<br>
+      • Help family members reconnect and stay together.<br>
+      • Follow updates regarding relief and recovery measures.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/tsunami evac.jpg"><figcaption>Evacuation Route</figcaption></figure>
+        <figure><img src="images/tsunami drill.jpg"><figcaption>Tsunami Drill</figcaption></figure>
+        <figure><img src="images/tsunami warning.jpg"><figcaption>Tsunami Warning</figcaption></figure>
+        <figure><img src="images/tsunami team.jpg"><figcaption>Emergency Team</figcaption></figure>
+      </div>
+    `
+  },
+
+  tornado: {
+    title: "Tornado Safety Tips",
+    image: "images/tornado.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Identify safe rooms such as basements or interior rooms.<br>
+      • Prepare emergency supplies and first aid kits.<br>
+      • Secure outdoor items that may become flying debris.<br>
+      • Stay informed via weather alerts.<br>
+      • Practice a tornado drill with your family.</p>
+
+      <h3>During:</h3>
+      <p>• Seek shelter in a basement or small, windowless room.<br>
+      • Cover your head and neck with your arms.<br>
+      • Stay away from windows and glass.<br>
+      • If outdoors, find a low-lying area and lie flat.<br>
+      • Listen to emergency broadcasts for updates.</p>
+
+      <h3>After:</h3>
+      <p>• Stay away from damaged buildings.<br>
+      • Watch out for sharp objects and broken power lines.<br>
+      • Check for injured people and call for help.<br>
+      • Do not enter collapsed structures.<br>
+      • Follow authorities for recovery instructions.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/tornado shelter.jpg"><figcaption>Safe Shelter</figcaption></figure>
+        <figure><img src="images/tornado drill.jpg"><figcaption>Tornado Drill</figcaption></figure>
+        <figure><img src="images/tornado response.jpg"><figcaption>Response Team</figcaption></figure>
+        <figure><img src="images/tornado map.jpg"><figcaption>Storm Tracking Map</figcaption></figure>
+      </div>
+    `
+  },
+
+  wildfire: {
+    title: "Wildfire Safety Tips",
+    image: "images/wildfire.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Clear dry leaves, branches, and flammable materials around your home.<br>
+      • Prepare masks to avoid inhaling smoke.<br>
+      • Create an emergency communication plan.<br>
+      • Store water and fire extinguishers.<br>
+      • Stay updated with fire danger alerts.</p>
+
+      <h3>During:</h3>
+      <p>• Evacuate immediately if instructed.<br>
+      • Keep doors and windows closed to block smoke.<br>
+      • Wear masks and long clothing to protect skin.<br>
+      • Avoid areas with heavy smoke and flames.<br>
+      • Help neighbors who may need assistance.</p>
+
+      <h3>After:</h3>
+      <p>• Return home only when authorities say it is safe.<br>
+      • Watch out for hotspots that may reignite.<br>
+      • Avoid breathing ash—use masks.<br>
+      • Dispose of burned materials safely.<br>
+      • Document damage for insurance and relief services.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/fire safety.jpg"><figcaption>Fire Safety Gear</figcaption></figure>
+        <figure><img src="images/fire evac.jpg"><figcaption>Evacuation</figcaption></figure>
+        <figure><img src="images/wildfire responders.jpg"><figcaption>Fire Responders</figcaption></figure>
+        <figure><img src="images/wildfire map.jpg"><figcaption>Fire Hazard Map</figcaption></figure>
+      </div>
+    `
+  },
+
+  sinkhole: {
+    title: "Sinkhole Safety Tips",
+    image: "images/sinkhole.jpg",
+    content: `
+      <h3>Before:</h3>
+      <p>• Be aware of areas where sinkholes commonly occur.<br>
+      • Watch for warning signs: cracks in walls, sagging ground, or stuck doors.<br>
+      • Avoid constructing buildings over soft or unstable land.<br>
+      • Ensure proper drainage around your home.<br>
+      • Prepare emergency plans and supplies.</p>
+
+      <h3>During:</h3>
+      <p>• Move away from the sinkhole immediately.<br>
+      • Keep others away from the area.<br>
+      • Avoid driving near the edges of the sinkhole.<br>
+      • Call authorities for help.<br>
+      • Stay in a safe place until experts assess the situation.</p>
+
+      <h3>After:</h3>
+      <p>• Do not return to the area until inspected by geologists.<br>
+      • Check your home for structural damage.<br>
+      • Follow official guidance for repairs.<br>
+      • Stay alert for additional ground movement.<br>
+      • Report new cracks or changes in the ground.</p>
+
+      <div class="extra-info">
+        <figure><img src="images/sinkhole signs.jpg"><figcaption>Warning Signs</figcaption></figure>
+        <figure><img src="images/sinkhole evac.jpg"><figcaption>Evacuation</figcaption></figure>
+        <figure><img src="images/sinkhole rescue.jpg"><figcaption>Rescue Team</figcaption></figure>
+        <figure><img src="images/sinkhole map.jpg"><figcaption>Hazard Map</figcaption></figure>
+      </div>
+    `
+  }
+};
+   
     function openModal(type){
       const modal = document.getElementById('modal');
       const body = document.getElementById('modal-body');
